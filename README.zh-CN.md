@@ -19,12 +19,18 @@ AI 驱动的中文到英文翻译应用，具有关键词提取功能。
 - **Pydantic**：数据验证和设置管理
 - **通义千问 (Qwen)**：LLM 提供商
 
-### 前端
+### 前端 (Web)
 - **React**：UI 框架
 - **TypeScript**：类型安全的 JavaScript
 - **Tailwind CSS**：实用优先的 CSS 框架
 - **Vite**：构建工具
 - **Framer Motion**：动画库
+
+### 移动端
+- **Flutter**：跨平台移动框架
+- **Dart**：编程语言
+- **Provider**：状态管理
+- **HTTP**：网络请求
 
 ## 项目结构
 
@@ -39,12 +45,17 @@ AITranslator/
 │   ├── config/          # 配置管理
 │   ├── docs/            # 后端文档
 │   └── test/            # 测试
-├── frontend/            # React 前端
+├── frontend/            # React Web 前端
 │   ├── src/
 │   │   ├── App.tsx      # 主组件
 │   │   └── main.tsx     # 入口文件
 │   ├── public/          # 静态资源
 │   └── docs/            # 前端文档
+├── mobile/              # Flutter 移动应用
+│   ├── lib/             # Dart 源代码
+│   ├── android/         # Android 原生代码
+│   ├── ios/             # iOS 原生代码
+│   └── docs/            # 移动端文档
 └── PRD.md              # 产品需求文档
 ```
 
@@ -107,6 +118,36 @@ npm run dev
 ```
 
 前端服务将在 `http://localhost:5174` 可用
+
+### 移动端设置
+
+1. 进入移动端目录：
+```bash
+cd mobile
+```
+
+2. 安装依赖：
+```bash
+flutter pub get
+```
+
+3. 运行应用：
+```bash
+# iOS（仅 macOS）
+flutter run -d iphone
+
+# Android
+flutter run -d android
+
+# Web
+flutter run -d chrome
+```
+
+**移动端前置条件：**
+- Flutter SDK 3.0+
+- Xcode 14+（用于 iOS）
+- Android Studio 2022+（用于 Android）
+- 物理设备或模拟器
 
 ## API 文档
 

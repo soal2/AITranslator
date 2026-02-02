@@ -19,12 +19,18 @@ AI-powered Chinese to English translation application with keyword extraction ca
 - **Pydantic**: Data validation and settings management
 - **Tongyi Qianwen (Qwen)**: LLM provider
 
-### Frontend
+### Frontend (Web)
 - **React**: UI framework
 - **TypeScript**: Type-safe JavaScript
 - **Tailwind CSS**: Utility-first CSS framework
 - **Vite**: Build tool
 - **Framer Motion**: Animation library
+
+### Mobile
+- **Flutter**: Cross-platform mobile framework
+- **Dart**: Programming language
+- **Provider**: State management
+- **HTTP**: Network requests
 
 ## Project Structure
 
@@ -39,12 +45,17 @@ AITranslator/
 │   ├── config/          # Configuration
 │   ├── docs/            # Backend documentation
 │   └── test/            # Tests
-├── frontend/            # React frontend
+├── frontend/            # React web frontend
 │   ├── src/
 │   │   ├── App.tsx      # Main component
 │   │   └── main.tsx     # Entry point
 │   ├── public/          # Static assets
 │   └── docs/            # Frontend documentation
+├── mobile/              # Flutter mobile application
+│   ├── lib/             # Dart source code
+│   ├── android/         # Android native code
+│   ├── ios/             # iOS native code
+│   └── docs/            # Mobile documentation
 └── PRD.md              # Product Requirements Document
 ```
 
@@ -107,6 +118,36 @@ npm run dev
 ```
 
 Frontend will be available at `http://localhost:5174`
+
+### Mobile Setup
+
+1. Navigate to mobile directory:
+```bash
+cd mobile
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+# For iOS (macOS only)
+flutter run -d iphone
+
+# For Android
+flutter run -d android
+
+# For web
+flutter run -d chrome
+```
+
+**Prerequisites for Mobile:**
+- Flutter SDK 3.0+
+- Xcode 14+ (for iOS)
+- Android Studio 2022+ (for Android)
+- A physical device or emulator
 
 ## API Documentation
 
