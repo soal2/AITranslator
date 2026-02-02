@@ -1,5 +1,7 @@
 # AITranslator
 
+English | [中文](README.zh-CN.md)
+
 AI-powered Chinese to English translation application with keyword extraction capabilities.
 
 ## Features
