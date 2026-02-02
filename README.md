@@ -1,5 +1,7 @@
 # AITranslator
 
+English | [中文](README.zh-CN.md)
+
 AI-powered Chinese to English translation application with keyword extraction capabilities.
 
 ## Features
@@ -162,6 +164,16 @@ The project follows standard Python (PEP 8) and TypeScript/React conventions.
 | `APP_PORT` | Server port | 5001 |
 | `LLM_TEMPERATURE` | LLM temperature | 0.3 |
 | `LLM_MAX_TOKENS` | Max tokens | 2000 |
+
+## Getting API Keys
+
+### Qwen API Key
+
+1. Visit https://dashscope.aliyun.com/
+2. Sign up or log in
+3. Navigate to API Keys section
+4. Generate a new API key
+5. Copy the key and paste it in your `.env` file
 
 ## License
 
